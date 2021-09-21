@@ -15,9 +15,9 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import PetsIcon from '@material-ui/icons/Pets';
+import CartWidget from './CartWidget';
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -112,6 +112,7 @@ export default function Navbar() {
           <Typography variant="h6" noWrap>
             FoodPuppys Shop
           </Typography>
+          <CartWidget></CartWidget>
         </Toolbar>
       </AppBar>
       <Drawer
