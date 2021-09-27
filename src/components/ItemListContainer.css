@@ -39,11 +39,15 @@
 .item-footer-minus{
     float: left;
     margin: 15px;
+    margin-left: 10px !important;
+    margin-top: 5px !important;
 }
 
 .item-footer-plus{
     float: right;
-    margin:15px
+    margin:15px;
+    margin-right : 10px !important;
+    margin-top: 5px !important;
 }
 .item-number{
     margin-left: 35%;
@@ -52,4 +56,9 @@
 
 .item-footer-agregar-carrito{
     margin-left: 30%;
+}
+
+.item-agregar-carrito{
+    margin-left: 30% !important;
+    margin-top: 5px !important;
 }
