@@ -4,18 +4,16 @@ import Button from '@mui/material/Button';
 
 const ItemCount = ( {stock, initial, onAdd}) =>{
     const [contador, setContador] = useState(initial); 
-  //  const [stockInternal, setStockInternal] = useState(stock); 
     
-    const decreaseStock = () =>{
+    const IncreaseCountHandler = () =>{
         if(contador >= initial ){
             setContador(contador + 1);
         }
     }
 
-    const addStock = () =>{
+    const DecreaseCountHandler = () =>{
         if (contador > initial ){
             setContador(contador - 1);
-         //   setStockInternal(stock +1);
         }
     }
     
@@ -24,9 +22,9 @@ const ItemCount = ( {stock, initial, onAdd}) =>{
             <div className="item-picture" ></div>
             <div className="item-footer">
                 <div className="item-footer-carrito">
-                    <Button l={2} className="item-footer-minus" variant="outlined" onClick={ () => addStock()}>-</Button>
+                    <Button l={2} className="item-footer-minus" variant="outlined" onClick={ () => DecreaseCountHandler()}>-</Button>
                     <span className="item-number">{contador}</span>
-                    <Button m={2} className="item-footer-plus"  onClick={ () => decreaseStock()} variant="outlined">+</Button>
+                    <Button m={2} className="item-footer-plus"  onClick={ () => IncreaseCountHandler()} variant="outlined">+</Button>
                 </div>
                 <div className="item-footer-carrito">
                     <Button className="item-agregar-carrito" variant="outlined">Agregar Carrito</Button>
