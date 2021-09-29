@@ -5,13 +5,8 @@ import './ItemList.css';
 
 const ItemList = (props) =>
  {
-    const task  = new Promise((resolve) =>
-       { setTimeout(3000)});
-
-    // task.then( res => {...})
-
     return (
-        <div>
+        <>
           {
             props.items.map(item => 
                 <Item
@@ -24,7 +19,7 @@ const ItemList = (props) =>
 
               )
           }
-        </div>
+        </>
      );
 }
 

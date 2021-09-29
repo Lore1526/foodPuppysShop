@@ -19,15 +19,14 @@ const ItemCount = ( {stock, initial, onAdd}) =>{
     
     return (
         <>
-            <div className="item-picture" ></div>
-            <div className="item-footer">
-                <div className="item-footer-carrito">
-                    <Button l={2} className="item-footer-minus" variant="outlined" onClick={ () => DecreaseCountHandler()}>-</Button>
-                    <span className="item-number">{contador}</span>
-                    <Button m={2} className="item-footer-plus"  onClick={ () => IncreaseCountHandler()} variant="outlined">+</Button>
+            <div >
+                <div >
+                    <Button l={2}  variant="outlined" onClick={ () => DecreaseCountHandler()}>-</Button>
+                    <span >{contador}</span>
+                    <Button m={2}   onClick={ () => IncreaseCountHandler()} variant="outlined">+</Button>
                 </div>
-                <div className="item-footer-carrito">
-                    <Button className="item-agregar-carrito" variant="outlined">Agregar Carrito</Button>
+                <div >
+                    <Button  variant="outlined">Agregar Carrito</Button>
                 </div>
             </div>
         </>
