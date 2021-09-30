@@ -6,6 +6,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import img from "../images/bolsapropla5.jpg";
+import ItemDetailContainer from './ItemDetailContainer';
 
 const Item = (props) =>
 {
@@ -13,12 +15,13 @@ const Item = (props) =>
             <>
                <div className="item">
                 <Card sx={{ maxWidth: 345 }}>
-                    <CardMedia
+                    {/* <CardMedia
                         component="img"
                         height="140"
-                        image="/static/images/cards/contemplative-reptile.jpg"
+                        image={img}
                         alt="green iguana"
                     />
+                                    
                     <CardContent>
                         <p> Id : {props.Id}</p>
                         <p> title : {props.title}</p>
@@ -31,7 +34,8 @@ const Item = (props) =>
                         Lizards are a widespread group of squamate reptiles, with over 6,000
                         species, ranging across all continents except Antarctica
                         </Typography>
-                    </CardContent>
+                    </CardContent> */}
+                    <ItemDetailContainer/>
                     <CardActions>
                         <Button size="small">Share</Button>
                         <Button size="small">Learn More</Button>
