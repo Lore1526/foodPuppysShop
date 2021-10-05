@@ -1,22 +1,22 @@
 import * as React from 'react';
 import './ItemDetailContainer.css';
 import { useState,useEffect } from 'react';
-import ItemDetail  from './itemDetail';
+import ItemDetail  from './ItemDetail';
 
 
 
 const ItemDetailContainer = (props) =>
 {
-    const [itemDetail, setItemsDetail] = useState([]);
+    const [itemDetail, setItemsDetail] = useState({});
 
     useEffect(() => {
-        const itemDetailDummy = [
+        const itemDetailDummy = 
         {
+            id:"1",
             descripcion:"Pro Plan Adultos", 
-            imagen:"1",
-            precio:"$4000"
-        }
-        ];
+            imagen:"https:/www.imagen.dummy",
+            precio: 4000
+        };
     
         const getItemsDetail = new Promise((resolve) => {
           setTimeout(() => {
